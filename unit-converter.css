@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+	text-align: center;
+	height: 100vh;
+	background-image: url("background.jpg");
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	
+	font-family: 'Nanum Myeongjo', serif;
+	font-size: 80px;
+	padding: 0.3em;
+}
+
+#container {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	margin-bottom: 30px;
+
+}
+
+.myDiv {
+	padding:0.3em;
+	background-color: rgb(255, 255, 255, 0.6);
+	border:1px solid black;
+	width: 50em;
+	height: 10em;
+	border-radius: 5px;
+}
+
+#celsius, #kilos, #meters,#fah, #pounds,#feet, #inch {
+	width: 9vw;
+	height: 3vh;
+	margin: 10 auto;
+	border-radius: 3px;
+	color: #0059b3;
+	font-size: 15px;
+}
+
+
+
+
+span {
+	font-size: 25px;
+	font-family: 'Cinzel', serif;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+
+	h1 {
+		font-size: 2rem;
+		margin: 0;
+	}
+  .myDiv {
+    width: 100%; 
+
+
+  }
+
+  #celsius, #kilos, #meters, #fah, #pounds, #feet, #inch{
+  	width: 33vw;
+
+  }
+}
